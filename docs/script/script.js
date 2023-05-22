@@ -32,7 +32,7 @@ function Content_menu__init() {
 		let $this = $(this);
 
 		console.log("실행");
-		
+
 		let thisIndex = $this.index();
 
 		$this.siblings('.active').removeClass('active');
@@ -43,8 +43,8 @@ function Content_menu__init() {
 		let $shopping = $box1.find('.shopping');
 
 		$shopping.find(' > ul > li').removeClass('active');
-		$shopping.find(' > ul > li').eq(thisIndex).addClass('active');		
- 
+		$shopping.find(' > ul > li').eq(thisIndex).addClass('active');
+
 	})
 }
 
@@ -52,6 +52,36 @@ Content_menu__init();
 
 
 // 메인페이지 스위치 main_sw 스와이퍼
+// function Swslider__init() {
+// 	let swiper = new Swiper('.sw_img-slider .swiper', {
+// 		slidesPerView: 5,
+// 		spaceBetween: 10,
+// 		loop: true,
+// 		pagination: {
+// 			clickable: true,
+// 			type: 'bullets'
+// 		},
+// 		autoplay: {
+// 			delay: 1000,
+// 			disableOnInteraction: false // swiper 일시 정지 해제
+// 		}
+// 	});
+
+// 	const swImgSliderEl = document.querySelector('.sw_img-slider');
+// 	// swiper 일시 정지
+// 	swImgSliderEl.addEventListener('mouseenter', function () {
+// 		swiper.autoplay.stop();
+// 	});
+// 	// swiper 다시 시작
+// 	swImgSliderEl.addEventListener('mouseleave', function () {
+// 		swiper.autoplay.start();
+// 	});
+// }
+
+// Swiperlider__init();
+
+
+//main_sw 스와이퍼
 function Swslider__init() {
 	let swiper = new Swiper('.sw_img-slider .swiper', {
 		slidesPerView: 5,
@@ -77,8 +107,8 @@ function Swslider__init() {
 		swiper.autoplay.start();
 	});
 }
+Swslider__init();
 
-Swiperlider__init();
 
 
 // 상품페이지 좋아요(하트) 버튼
