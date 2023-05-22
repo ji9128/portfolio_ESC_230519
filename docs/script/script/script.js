@@ -52,7 +52,7 @@ Content_menu__init();
 
 
 // 메인페이지 스위치 main_sw 스와이퍼
-function Swiperlider__init() {
+function Swslider__init(){
 	let swiper = new Swiper('.sw_img-slider .swiper', {
 		slidesPerView: 5,
 		spaceBetween: 10,
@@ -78,8 +78,7 @@ function Swiperlider__init() {
 	});
 }
 
-Swiperlider__init();
-
+Swslider__init();
 
 
 // 상품페이지 좋아요(하트) 버튼
